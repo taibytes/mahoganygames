@@ -1,0 +1,49 @@
+.learn-more {
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 1.6;
+}
+
+.learn-more h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #5d3a2d;
+}
+
+.learn-more p {
+  font-size: 1.1rem;
+  color: #3a2e2b;
+}
+
+.status {
+  margin-top: 2.5rem;
+}
+
+.status h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+  color: #5d3a2d;
+}
+
+.status p {
+  font-size: 1rem;
+}
+
+.concept-art {
+  margin-top: 2rem;
+}
+
+.concept-art img {
+  width: 100%;
+  max-width: 720px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.concept-art figcaption {
+  font-size: 0.85rem;
+  color: #5d3a2d;
+  margin-top: 0.5rem;
+}
