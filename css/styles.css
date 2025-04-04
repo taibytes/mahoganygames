@@ -1,127 +1,130 @@
 body {
-  margin: 0;
-  font-family: 'Inter', sans-serif;
-  background-color: #f6f2ed;
-  background-image: url('https://www.transparenttextures.com/patterns/paper-fibers.png');
-  color: #3a2e2b;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: #f6f2ed;
+    background-image: url('https://www.transparenttextures.com/patterns/paper-fibers.png');
+    color: #3a2e2b;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 header {
-  padding: 2rem 1rem;
-  background-color: #7d4e3b;
-  color: white;
-  text-align: center;
+    padding: 2rem 1rem;
+    background-color: #7d4e3b;
+    color: white;
+    text-align: center;
 }
 
-header img {
-  max-width: 120px;
-  display: block;
-  margin: 0 auto 1rem auto;
-}
+    header img {
+        max-width: 120px;
+        display: block;
+        margin: 0 auto 1rem auto;
+        background-color: #f6f2ed;
+        border-radius: 100px;
+        padding: 0.5rem;
+    }
 
-header h1 {
-  margin: 0;
-  font-size: 2rem;
-}
+    header h1 {
+        margin: 0;
+        font-size: 2rem;
+    }
 
-header p {
-  margin-top: 0.5rem;
-  font-size: 1rem;
-  font-weight: 400;
-}
+    header p {
+        margin-top: 0.5rem;
+        font-size: 1rem;
+        font-weight: 400;
+    }
 
 nav {
-  background-color: #5d3a2d;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 1.5rem;
-  padding: 0.75rem;
+    background-color: #5d3a2d;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding: 0.75rem;
 }
 
-nav a {
-  position: relative;
-  color: white;
-  text-decoration: none;
-  font-weight: 600;
-  transition: color 0.3s ease;
-}
+    nav a {
+        position: relative;
+        color: white;
+        text-decoration: none;
+        font-weight: 600;
+        transition: color 0.3s ease;
+    }
 
-nav a::after {
-  content: "";
-  position: absolute;
-  width: 0;
-  height: 2px;
-  left: 0;
-  bottom: -4px;
-  background-color: #7c9a3e;
-  transition: width 0.3s ease;
-}
+        nav a::after {
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 2px;
+            left: 0;
+            bottom: -4px;
+            background-color: #7c9a3e;
+            transition: width 0.3s ease;
+        }
 
-nav a:hover::after {
-  width: 100%;
-}
+        nav a:hover::after {
+            width: 100%;
+        }
 
-nav a:focus {
-  outline: 3px solid #7c9a3e;
-  outline-offset: 3px;
-}
+        nav a:focus {
+            outline: 3px solid #7c9a3e;
+            outline-offset: 3px;
+        }
 
 main {
-  padding: 2rem;
-  max-width: 800px;
-  margin: 0 auto;
-  text-align: center;
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
 }
 
 .button {
-  display: inline-block;
-  margin-top: 2rem;
-  padding: 0.75rem 1.5rem;
-  background-color: #7c9a3e;
-  color: white;
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: 600;
-  transition: background 0.3s ease;
+    display: inline-block;
+    margin-top: 2rem;
+    padding: 0.75rem 1.5rem;
+    background-color: #7c9a3e;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.3s ease;
 }
 
-.button:focus {
-  outline: 3px solid #5d6e3c;
-  outline-offset: 3px;
-}
+    .button:focus {
+        outline: 3px solid #5d6e3c;
+        outline-offset: 3px;
+    }
 
-.button:hover {
-  background-color: #5d6e3c;
-}
+    .button:hover {
+        background-color: #5d6e3c;
+    }
 
 .badge {
-  font-size: 0.8rem;
-  margin-top: 1rem;
-  background-color: #ede5dd;
-  color: #3a2e2b;
-  padding: 0.25rem 0.5rem;
-  border-radius: 4px;
-  display: inline-block;
+    font-size: 0.8rem;
+    margin-top: 1rem;
+    background-color: #ede5dd;
+    color: #3a2e2b;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    display: inline-block;
 }
 
 footer {
-  margin-top: auto;
-  text-align: center;
-  padding: 1rem;
-  background-color: #ede5dd;
-  font-size: 0.9rem;
-  color: #3a2e2b;
+    margin-top: auto;
+    text-align: center;
+    padding: 1rem;
+    background-color: #ede5dd;
+    font-size: 0.9rem;
+    color: #3a2e2b;
 }
 
-footer a {
-  color: #7d4e3b;
-  text-decoration: none;
-}
+    footer a {
+        color: #7d4e3b;
+        text-decoration: none;
+    }
 
-footer a:hover {
-  text-decoration: underline;
-}
+        footer a:hover {
+            text-decoration: underline;
+        }
