@@ -1,0 +1,39 @@
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: #f6f2ed;
+  color: #3a2e2b;
+}
+
+header {
+  padding: 1.5rem;
+  background-color: #7d4e3b;
+  color: white;
+  text-align: center;
+}
+
+.about {
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 1.8;
+}
+
+.about a {
+  color: #7c9a3e;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.about a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #ede5dd;
+  font-size: 0.9rem;
+  color: #3a2e2b;
+}
