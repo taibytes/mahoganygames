@@ -1,10 +1,18 @@
 # Overview
 
-Mahogany Games is a cozy indie game development studio focused on creating inclusive, meaningful gaming experiences. The project is a full-stack web application built with React (frontend) and Express.js (backend), showcasing the studio's games, development blog, and community features. The site emphasizes accessibility, warm design aesthetics, and community engagement through a development journal and newsletter subscription.
+Mahogany Games is a cozy indie game development studio focused on creating inclusive, meaningful gaming experiences with a nature-gaming aesthetic. The project is a full-stack web application built with React (frontend) and Express.js (backend), showcasing the studio's games, development blog, and community features. The site beautifully merges gaming culture with natural, organic elements using forest greens (#708f3c) and rich browns (#6f453a), emphasizing eco-friendly gaming, accessibility, and community engagement through a development journal and newsletter subscription.
 
 # User Preferences
 
 Preferred communication style: Simple, everyday language.
+
+## Design Preferences
+- **Color Scheme**: Exact colors specified by user for nature-gaming aesthetic
+  - Green: #708f3c (forest/olive green)
+  - Brown: #6f453a (rich brown)
+- **Aesthetic**: Nature-gaming theme combining technology with organic elements
+- **Background**: Wood texture background (user loves this feature)
+- **Accessibility**: Site must meet accessibility standards with proper contrast ratios
 
 # System Architecture
 
@@ -37,10 +45,15 @@ Preferred communication style: Simple, everyday language.
 - **Analytics**: Google Analytics integration for user behavior tracking
 
 ## Design System
-- **Color Palette**: Custom mahogany-based color scheme with accessibility-compliant contrast ratios
+- **Color Palette**: Custom nature-gaming color scheme using exact user specifications:
+  - Primary Green: #708f3c (Forest/olive green for eco-friendly gaming themes)
+  - Primary Brown: #6f453a (Rich brown connecting to natural wood elements)
+  - Accessibility: WCAG AA compliant contrast ratios with dedicated accessible color variants
+  - Wood Texture: Enhanced background pattern combining both colors for nature aesthetic
 - **Typography**: Playfair Display for headings, system fonts for body text
 - **Components**: Reusable UI components with consistent styling and behavior
 - **Responsive Design**: Mobile-first approach with Tailwind breakpoints
+- **Accessibility**: Enhanced focus states, high contrast colors, and proper semantic markup
 
 # External Dependencies
 

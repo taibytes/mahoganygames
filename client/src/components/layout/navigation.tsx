@@ -30,10 +30,10 @@ const Navigation = () => {
               <Coffee className="text-white" size={20} />
             </div>
             <div className="flex flex-col">
-              <span className="font-playfair font-bold text-xl text-brown-800">
+              <span className="font-playfair font-bold text-xl text-brown-accessible">
                 Mahogany Games
               </span>
-              <span className="font-caveat text-sm text-forest-600">
+              <span className="font-caveat text-sm text-forest-accessible">
                 🌿 Nature • Technology • Gaming
               </span>
             </div>
@@ -43,10 +43,10 @@ const Navigation = () => {
           <div className="hidden md:flex items-center space-x-8">
             {navItems.map((item) => (
               <Link key={item.path} href={item.path}>
-                <a className={`font-medium transition-colors duration-200 ${
+                <a className={`font-medium transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-forest-500 rounded px-2 py-1 ${
                   isActive(item.path)
-                    ? "text-mahogany-600"
-                    : "text-mahogany-700 hover:text-mahogany-500"
+                    ? "text-forest-accessible"
+                    : "text-brown-accessible hover:text-forest-accessible"
                 }`}>
                   {item.label}
                 </a>
@@ -71,10 +71,10 @@ const Navigation = () => {
                 {navItems.map((item) => (
                   <Link key={item.path} href={item.path}>
                     <a 
-                      className={`block text-lg font-medium transition-colors duration-200 ${
+                      className={`block text-lg font-medium transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-forest-500 rounded px-2 py-1 ${
                         isActive(item.path)
-                          ? "text-mahogany-600"
-                          : "text-mahogany-700 hover:text-mahogany-500"
+                          ? "text-forest-accessible"
+                          : "text-brown-accessible hover:text-forest-accessible"
                       }`}
                       onClick={() => setIsOpen(false)}
                     >

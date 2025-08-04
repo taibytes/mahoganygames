@@ -13,11 +13,11 @@ const Hero = () => {
           {/* Hero Content */}
           <div className="space-y-8">
             <div className="space-y-4">
-              <h1 className="font-playfair text-5xl lg:text-6xl font-bold text-brown-800 leading-tight">
-                Welcome to <span className="text-forest-700">Mahogany Games</span>
+              <h1 className="font-playfair text-5xl lg:text-6xl font-bold text-brown-accessible leading-tight">
+                Welcome to <span className="text-forest-accessible">Mahogany Games</span>
               </h1>
-              <p className="text-xl text-brown-700 font-light leading-relaxed">
-                Creating cozy, inclusive, and meaningful gaming experiences that connect <span className="text-forest-600 font-medium">nature and technology</span> to warm the heart and inspire the soul.
+              <p className="text-xl text-brown-accessible font-light leading-relaxed">
+                Creating cozy, inclusive, and meaningful gaming experiences that connect <span className="text-forest-accessible font-medium">nature and technology</span> to warm the heart and inspire the soul.
               </p>
             </div>
             

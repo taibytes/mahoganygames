@@ -26,29 +26,30 @@
   --ring: hsl(20, 14.3%, 4.1%);
   --radius: 0.75rem;
   
-  /* Nature-Gaming Palette - Forest greens and rich browns */
-  --forest-50: hsl(95, 25%, 97%);
-  --forest-100: hsl(90, 20%, 94%);
-  --forest-200: hsl(85, 25%, 88%);
-  --forest-300: hsl(80, 30%, 75%);
-  --forest-400: hsl(75, 35%, 62%);
-  --forest-500: hsl(70, 40%, 48%);
-  --forest-600: hsl(65, 45%, 38%);
-  --forest-700: hsl(60, 50%, 28%);
-  --forest-800: hsl(55, 55%, 20%);
-  --forest-900: hsl(50, 60%, 15%);
+  /* Custom Nature-Gaming Palette - Your exact colors */
+  /* Green #708f3c (hsl(80, 42%, 40%)) and Brown #6f453a (hsl(14, 31%, 33%)) */
+  --forest-50: hsl(80, 42%, 97%);
+  --forest-100: hsl(80, 42%, 94%);
+  --forest-200: hsl(80, 42%, 85%);
+  --forest-300: hsl(80, 42%, 70%);
+  --forest-400: hsl(80, 42%, 55%);
+  --forest-500: hsl(80, 42%, 40%); /* Your Green #708f3c */
+  --forest-600: hsl(80, 42%, 35%);
+  --forest-700: hsl(80, 42%, 28%);
+  --forest-800: hsl(80, 42%, 20%);
+  --forest-900: hsl(80, 42%, 15%);
   
-  /* Rich brown tones */
-  --brown-50: hsl(35, 30%, 97%);
-  --brown-100: hsl(32, 25%, 93%);
-  --brown-200: hsl(30, 30%, 85%);
-  --brown-300: hsl(25, 35%, 70%);
-  --brown-400: hsl(22, 40%, 55%);
-  --brown-500: hsl(20, 45%, 42%);
-  --brown-600: hsl(18, 50%, 32%);
-  --brown-700: hsl(16, 55%, 25%);
-  --brown-800: hsl(14, 60%, 18%);
-  --brown-900: hsl(12, 65%, 12%);
+  /* Rich brown tones based on your Brown #6f453a */
+  --brown-50: hsl(14, 31%, 97%);
+  --brown-100: hsl(14, 31%, 93%);
+  --brown-200: hsl(14, 31%, 85%);
+  --brown-300: hsl(14, 31%, 70%);
+  --brown-400: hsl(14, 31%, 55%);
+  --brown-500: hsl(14, 31%, 40%);
+  --brown-600: hsl(14, 31%, 33%); /* Your Brown #6f453a */
+  --brown-700: hsl(14, 31%, 26%);
+  --brown-800: hsl(14, 31%, 18%);
+  --brown-900: hsl(14, 31%, 12%);
   
   /* Legacy mahogany variables for compatibility */
   --mahogany-50: var(--brown-50);
@@ -62,12 +63,16 @@
   --mahogany-800: var(--brown-800);
   --mahogany-900: var(--brown-900);
   
-  /* Natural accent colors */
-  --accent-light: hsl(85, 40%, 96%);
-  --accent-warm: hsl(75, 50%, 75%);
+  /* Natural accent colors for accessibility */
+  --accent-light: hsl(80, 42%, 96%);
+  --accent-warm: hsl(80, 42%, 75%);
   --accent-gold: hsl(45, 70%, 85%);
   --wood-brown: var(--brown-600);
   --warm-cream: hsl(40, 45%, 95%);
+  
+  /* High contrast variants for accessibility */
+  --forest-accessible: hsl(80, 42%, 25%); /* AA compliant on white */
+  --brown-accessible: hsl(14, 31%, 20%); /* AA compliant on white */
 }
 
 .dark {
@@ -135,11 +140,11 @@
   }
   
   .cozy-shadow {
-    box-shadow: 0 12px 30px -8px rgba(160, 82, 45, 0.15), 0 8px 16px -6px rgba(139, 69, 19, 0.08);
+    box-shadow: 0 12px 30px -8px rgba(112, 143, 60, 0.15), 0 8px 16px -6px rgba(111, 69, 58, 0.08);
   }
   
   .warm-glow {
-    box-shadow: 0 0 25px rgba(222, 184, 135, 0.4), 0 0 50px rgba(160, 82, 45, 0.15);
+    box-shadow: 0 0 25px rgba(112, 143, 60, 0.2), 0 0 50px rgba(111, 69, 58, 0.15);
   }
   
   .nature-card {
@@ -262,9 +267,29 @@
   .hover\:text-mahogany-500:hover { color: var(--mahogany-500); }
   .hover\:text-mahogany-800:hover { color: var(--mahogany-800); }
   
-  /* Focus States */
-  .focus\:ring-forest-500:focus { --tw-ring-color: var(--forest-500); }
-  .focus\:ring-mahogany-500:focus { --tw-ring-color: var(--mahogany-500); }
+  /* Focus States - Enhanced for accessibility */
+  .focus\:ring-forest-500:focus { 
+    --tw-ring-color: var(--forest-500);
+    box-shadow: 0 0 0 3px var(--forest-500);
+    outline: 2px solid transparent;
+  }
+  .focus\:ring-mahogany-500:focus { 
+    --tw-ring-color: var(--mahogany-500);
+    box-shadow: 0 0 0 3px var(--mahogany-500);
+    outline: 2px solid transparent;
+  }
+  
+  /* Accessible text colors for better contrast */
+  .text-forest-accessible { color: var(--forest-accessible); }
+  .text-brown-accessible { color: var(--brown-accessible); }
+  
+  /* Accessibility-focused text colors (WCAG AA compliant) */
+  .text-forest-accessible { color: var(--forest-accessible); }
+  .text-brown-accessible { color: var(--brown-accessible); }
+  
+  /* High contrast hover states for accessibility */
+  .hover\:text-forest-accessible:hover { color: var(--forest-accessible); }
+  .hover\:text-brown-accessible:hover { color: var(--brown-accessible); }
 }
 
 /* Custom font classes */
