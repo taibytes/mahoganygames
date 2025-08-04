@@ -23,22 +23,23 @@ const Hero = () => {
             
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4">
-              <Link href="/games">
-                <Button size="lg" className="bg-forest-600 hover:bg-forest-700 text-white transform hover:scale-105 transition-all duration-200 shadow-lg">
+              <Button asChild size="lg" className="bg-forest-600 hover:bg-forest-700 text-white transform hover:scale-105 transition-all duration-200 shadow-lg">
+                <Link href="/games">
                   <span className="mr-2">🎮</span>
                   Explore Our Games
-                </Button>
-              </Link>
-              <Link href="/about">
-                <Button 
-                  variant="outline" 
-                  size="lg"
-                  className="border-2 border-brown-600 text-brown-600 hover:bg-brown-600 hover:text-white transition-all duration-200 bg-white"
-                >
+                </Link>
+              </Button>
+              <Button 
+                asChild
+                variant="outline" 
+                size="lg"
+                className="border-2 border-brown-600 text-brown-600 hover:bg-brown-600 hover:text-white transition-all duration-200 bg-white"
+              >
+                <Link href="/about">
                   <span className="mr-2">🌿</span>
                   Learn About Us
-                </Button>
-              </Link>
+                </Link>
+              </Button>
             </div>
 
             {/* Social Links */}

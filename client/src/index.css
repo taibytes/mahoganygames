@@ -132,7 +132,7 @@
   .wood-texture {
     background-image: 
       radial-gradient(circle at 25% 25%, var(--brown-600) 2px, transparent 2px),
-      radial-gradient(circle at 75% 75%, var(--forest-600) 1px, transparent 1px),
+      radial-gradient(circle at 75% 75%, var(--brown-700) 1px, transparent 1px),
       linear-gradient(45deg, transparent 48%, var(--wood-brown) 49%, var(--wood-brown) 51%, transparent 52%);
     background-size: 28px 28px, 14px 14px, 60px 60px;
     opacity: 0.08;
