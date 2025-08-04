@@ -1,0 +1,149 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: hsl(46, 26%, 96%);
+  --foreground: hsl(20, 14.3%, 4.1%);
+  --muted: hsl(45, 18%, 92%);
+  --muted-foreground: hsl(25, 5.3%, 44.7%);
+  --popover: hsl(0, 0%, 100%);
+  --popover-foreground: hsl(20, 14.3%, 4.1%);
+  --card: hsl(0, 0%, 100%);
+  --card-foreground: hsl(20, 14.3%, 4.1%);
+  --border: hsl(20, 5.9%, 90%);
+  --input: hsl(20, 5.9%, 90%);
+  --primary: hsl(25, 51%, 45%);
+  --primary-foreground: hsl(60, 9.1%, 97.8%);
+  --secondary: hsl(45, 18%, 92%);
+  --secondary-foreground: hsl(24, 9.8%, 10%);
+  --accent: hsl(36, 64%, 57%);
+  --accent-foreground: hsl(24, 9.8%, 10%);
+  --destructive: hsl(0, 84.2%, 60.2%);
+  --destructive-foreground: hsl(60, 9.1%, 97.8%);
+  --ring: hsl(20, 14.3%, 4.1%);
+  --radius: 0.75rem;
+  
+  /* Mahogany-specific colors */
+  --mahogany-50: hsl(30, 40%, 97%);
+  --mahogany-100: hsl(30, 30%, 94%);
+  --mahogany-200: hsl(33, 30%, 86%);
+  --mahogany-300: hsl(28, 25%, 70%);
+  --mahogany-400: hsl(27, 35%, 60%);
+  --mahogany-500: hsl(25, 51%, 45%);
+  --mahogany-600: hsl(21, 52%, 38%);
+  --mahogany-700: hsl(19, 54%, 30%);
+  --mahogany-800: hsl(17, 55%, 23%);
+  --mahogany-900: hsl(15, 56%, 16%);
+  
+  --accent-light: hsl(45, 50%, 95%);
+  --accent-warm: hsl(36, 64%, 70%);
+}
+
+.dark {
+  --background: hsl(240, 10%, 3.9%);
+  --foreground: hsl(0, 0%, 98%);
+  --muted: hsl(240, 3.7%, 15.9%);
+  --muted-foreground: hsl(240, 5%, 64.9%);
+  --popover: hsl(240, 10%, 3.9%);
+  --popover-foreground: hsl(0, 0%, 98%);
+  --card: hsl(240, 10%, 3.9%);
+  --card-foreground: hsl(0, 0%, 98%);
+  --border: hsl(240, 3.7%, 15.9%);
+  --input: hsl(240, 3.7%, 15.9%);
+  --primary: hsl(25, 51%, 45%);
+  --primary-foreground: hsl(60, 9.1%, 97.8%);
+  --secondary: hsl(240, 3.7%, 15.9%);
+  --secondary-foreground: hsl(0, 0%, 98%);
+  --accent: hsl(36, 64%, 57%);
+  --accent-foreground: hsl(0, 0%, 98%);
+  --destructive: hsl(0, 62.8%, 30.6%);
+  --destructive-foreground: hsl(0, 0%, 98%);
+  --ring: hsl(240, 4.9%, 83.9%);
+  --radius: 0.75rem;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-sans antialiased bg-background text-foreground;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  .mahogany-gradient {
+    background: linear-gradient(135deg, var(--mahogany-100) 0%, var(--accent-light) 100%);
+  }
+  
+  .wood-texture {
+    background-image: 
+      radial-gradient(circle at 25% 25%, var(--mahogany-500) 2px, transparent 2px),
+      radial-gradient(circle at 75% 75%, var(--mahogany-400) 1px, transparent 1px);
+    background-size: 24px 24px, 12px 12px;
+    opacity: 0.05;
+  }
+  
+  .cozy-shadow {
+    box-shadow: 0 10px 25px -5px rgba(139, 69, 19, 0.1), 0 10px 10px -5px rgba(139, 69, 19, 0.04);
+  }
+  
+  .warm-glow {
+    box-shadow: 0 0 20px rgba(244, 164, 96, 0.3);
+  }
+}
+
+@layer utilities {
+  .text-mahogany-50 { color: var(--mahogany-50); }
+  .text-mahogany-100 { color: var(--mahogany-100); }
+  .text-mahogany-200 { color: var(--mahogany-200); }
+  .text-mahogany-300 { color: var(--mahogany-300); }
+  .text-mahogany-400 { color: var(--mahogany-400); }
+  .text-mahogany-500 { color: var(--mahogany-500); }
+  .text-mahogany-600 { color: var(--mahogany-600); }
+  .text-mahogany-700 { color: var(--mahogany-700); }
+  .text-mahogany-800 { color: var(--mahogany-800); }
+  .text-mahogany-900 { color: var(--mahogany-900); }
+  
+  .bg-mahogany-50 { background-color: var(--mahogany-50); }
+  .bg-mahogany-100 { background-color: var(--mahogany-100); }
+  .bg-mahogany-200 { background-color: var(--mahogany-200); }
+  .bg-mahogany-300 { background-color: var(--mahogany-300); }
+  .bg-mahogany-400 { background-color: var(--mahogany-400); }
+  .bg-mahogany-500 { background-color: var(--mahogany-500); }
+  .bg-mahogany-600 { background-color: var(--mahogany-600); }
+  .bg-mahogany-700 { background-color: var(--mahogany-700); }
+  .bg-mahogany-800 { background-color: var(--mahogany-800); }
+  .bg-mahogany-900 { background-color: var(--mahogany-900); }
+  
+  .border-mahogany-200 { border-color: var(--mahogany-200); }
+  .border-mahogany-300 { border-color: var(--mahogany-300); }
+  .border-mahogany-600 { border-color: var(--mahogany-600); }
+  
+  .hover\:bg-mahogany-700:hover { background-color: var(--mahogany-700); }
+  .hover\:text-mahogany-500:hover { color: var(--mahogany-500); }
+  .hover\:text-mahogany-800:hover { color: var(--mahogany-800); }
+  
+  .focus\:ring-mahogany-500:focus { --tw-ring-color: var(--mahogany-500); }
+}
+
+/* Custom font imports */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&family=Caveat:wght@400;600&display=swap');
+
+.font-playfair {
+  font-family: 'Playfair Display', serif;
+}
+
+.font-caveat {
+  font-family: 'Caveat', cursive;
+}
+
+.font-inter {
+  font-family: 'Inter', sans-serif;
+}
