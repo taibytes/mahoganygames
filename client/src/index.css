@@ -26,13 +26,13 @@
   --ring: hsl(20, 14.3%, 4.1%);
   --radius: 0.75rem;
   
-  /* Custom Nature-Gaming Palette - Your exact colors */
-  /* Green #708f3c (hsl(80, 42%, 40%)) and Brown #6f453a (hsl(14, 31%, 33%)) */
-  --forest-50: hsl(80, 42%, 97%);
-  --forest-100: hsl(80, 42%, 94%);
-  --forest-200: hsl(80, 42%, 85%);
-  --forest-300: hsl(80, 42%, 70%);
-  --forest-400: hsl(80, 42%, 55%);
+  /* Custom Nature-Gaming Palette - Clean solid colors */
+  /* Green #708f3c and Brown #6f453a with neutral grays */
+  --forest-50: hsl(0, 0%, 98%);
+  --forest-100: hsl(0, 0%, 95%);
+  --forest-200: hsl(0, 0%, 88%);
+  --forest-300: hsl(0, 0%, 75%);
+  --forest-400: hsl(0, 0%, 60%);
   --forest-500: hsl(80, 42%, 40%); /* Your Green #708f3c */
   --forest-600: hsl(80, 42%, 35%);
   --forest-700: hsl(80, 42%, 28%);
@@ -133,10 +133,9 @@
     background-image: 
       radial-gradient(circle at 25% 25%, var(--brown-600) 2px, transparent 2px),
       radial-gradient(circle at 75% 75%, var(--forest-600) 1px, transparent 1px),
-      linear-gradient(45deg, transparent 48%, var(--wood-brown) 49%, var(--wood-brown) 51%, transparent 52%),
-      linear-gradient(90deg, var(--forest-700) 1px, transparent 1px);
-    background-size: 32px 32px, 16px 16px, 64px 64px, 120px 120px;
-    opacity: 0.12;
+      linear-gradient(45deg, transparent 48%, var(--wood-brown) 49%, var(--wood-brown) 51%, transparent 52%);
+    background-size: 28px 28px, 14px 14px, 60px 60px;
+    opacity: 0.08;
   }
   
   .cozy-shadow {
