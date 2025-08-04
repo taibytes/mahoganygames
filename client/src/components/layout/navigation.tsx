@@ -30,11 +30,11 @@ const Navigation = () => {
               <Coffee className="text-white" size={20} />
             </div>
             <div className="flex flex-col">
-              <span className="font-playfair font-bold text-xl text-mahogany-800">
+              <span className="font-playfair font-bold text-xl text-brown-800">
                 Mahogany Games
               </span>
-              <span className="font-caveat text-sm text-mahogany-600">
-                Cozy • Inclusive • Meaningful
+              <span className="font-caveat text-sm text-forest-600">
+                🌿 Nature • Technology • Gaming
               </span>
             </div>
           </Link>

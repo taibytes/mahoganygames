@@ -13,11 +13,11 @@ const Hero = () => {
           {/* Hero Content */}
           <div className="space-y-8">
             <div className="space-y-4">
-              <h1 className="font-playfair text-5xl lg:text-6xl font-bold text-mahogany-800 leading-tight">
-                Welcome to <span className="text-mahogany-600">Mahogany Games</span>
+              <h1 className="font-playfair text-5xl lg:text-6xl font-bold text-brown-800 leading-tight">
+                Welcome to <span className="text-forest-700">Mahogany Games</span>
               </h1>
-              <p className="text-xl text-mahogany-700 font-light leading-relaxed">
-                Creating cozy, inclusive, and meaningful gaming experiences that warm the heart and inspire the soul.
+              <p className="text-xl text-brown-700 font-light leading-relaxed">
+                Creating cozy, inclusive, and meaningful gaming experiences that connect <span className="text-forest-600 font-medium">nature and technology</span> to warm the heart and inspire the soul.
               </p>
             </div>
             
@@ -33,8 +33,9 @@ const Hero = () => {
                 <Button 
                   variant="outline" 
                   size="lg"
-                  className="border-2 border-mahogany-600 text-mahogany-600 hover:bg-mahogany-600 hover:text-white transition-all duration-200 mahogany-card"
+                  className="border-2 border-forest-600 text-forest-600 hover:bg-forest-600 hover:text-white transition-all duration-200 nature-card"
                 >
+                  <span className="mr-2">🌿</span>
                   Learn About Us
                 </Button>
               </Link>
@@ -42,25 +43,25 @@ const Hero = () => {
 
             {/* Social Links */}
             <div className="flex items-center space-x-6 pt-4">
-              <span className="text-mahogany-600 font-medium">Follow the journey:</span>
+              <span className="text-forest-600 font-medium">🌲 Follow the journey:</span>
               <div className="flex space-x-4">
                 <a 
                   href="https://github.com/taibytes" 
-                  className="text-mahogany-600 hover:text-mahogany-800 text-xl transition-colors duration-200"
+                  className="text-forest-600 hover:text-forest-800 text-xl transition-colors duration-200 transform hover:scale-110"
                   aria-label="GitHub"
                 >
                   <Github size={24} />
                 </a>
                 <a 
                   href="#" 
-                  className="text-mahogany-600 hover:text-mahogany-800 text-xl transition-colors duration-200"
+                  className="text-forest-600 hover:text-forest-800 text-xl transition-colors duration-200 transform hover:scale-110"
                   aria-label="Twitter"
                 >
                   <Twitter size={24} />
                 </a>
                 <a 
                   href="#" 
-                  className="text-mahogany-600 hover:text-mahogany-800 text-xl transition-colors duration-200"
+                  className="text-forest-600 hover:text-forest-800 text-xl transition-colors duration-200 transform hover:scale-110"
                   aria-label="Instagram"
                 >
                   <Instagram size={24} />

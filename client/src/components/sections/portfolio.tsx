@@ -44,14 +44,14 @@ const Portfolio = () => {
 
   if (isLoading) {
     return (
-      <section className="py-20 bg-mahogany-50">
+      <section className="py-20 bg-forest-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[1, 2, 3].map((i) => (
               <div key={i} className="animate-pulse">
-                <div className="bg-mahogany-200 rounded-2xl h-48 mb-4"></div>
-                <div className="bg-mahogany-200 rounded h-4 mb-2"></div>
-                <div className="bg-mahogany-200 rounded h-3 w-3/4"></div>
+                <div className="bg-forest-200 rounded-2xl h-48 mb-4"></div>
+                <div className="bg-brown-200 rounded h-4 mb-2"></div>
+                <div className="bg-forest-200 rounded h-3 w-3/4"></div>
               </div>
             ))}
           </div>
@@ -62,24 +62,24 @@ const Portfolio = () => {
 
   if (!games || games.length === 0) {
     return (
-      <section className="py-20 bg-mahogany-50">
+      <section className="py-20 bg-forest-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <p className="text-mahogany-600">No games available at the moment.</p>
+          <p className="text-forest-600">🌱 No games growing in our forest at the moment.</p>
         </div>
       </section>
     );
   }
 
   return (
-    <section className="py-20 bg-mahogany-50">
+    <section className="py-20 bg-forest-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center space-y-4 mb-16">
-          <h2 className="font-playfair text-4xl lg:text-5xl font-bold text-mahogany-800">
-            Game Portfolio
+          <h2 className="font-playfair text-4xl lg:text-5xl font-bold text-brown-800">
+            🌳 Game Forest
           </h2>
-          <p className="text-xl text-mahogany-600 max-w-2xl mx-auto">
-            Explore our collection of cozy, inclusive gaming experiences
+          <p className="text-xl text-forest-600 max-w-2xl mx-auto">
+            Explore our growing collection of nature-inspired, cozy gaming experiences where technology meets the natural world
           </p>
         </div>
 
@@ -92,8 +92,8 @@ const Portfolio = () => {
             return (
               <div 
                 key={game.id} 
-                className={`bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 ${
-                  isActive ? 'border-2 border-mahogany-200' : 'border border-mahogany-100'
+                className={`nature-card rounded-2xl cozy-shadow overflow-hidden hover:warm-glow transition-all duration-300 transform hover:scale-105 ${
+                  isActive ? 'border-2 border-forest-300' : 'border border-forest-200'
                 }`}
               >
                 <div className={`relative h-48 flex items-center justify-center ${
