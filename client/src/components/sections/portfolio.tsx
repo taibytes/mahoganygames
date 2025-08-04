@@ -107,11 +107,9 @@ const Portfolio = () => {
                     <IconComponent size={48} className="mx-auto mb-2" />
                     <p className="font-semibold">{getStatusText(game.status)}</p>
                   </div>
-                  {isActive && (
-                    <Badge className={`absolute top-3 right-3 ${getStatusColor(game.status)}`}>
-                      {getStatusText(game.status)}
-                    </Badge>
-                  )}
+                  <Badge className={`absolute top-3 right-3 ${getStatusColor(game.status)}`}>
+                    {getStatusText(game.status)}
+                  </Badge>
                 </div>
                 
                 <div className="p-6 space-y-4">

@@ -52,11 +52,11 @@ const Navigation = () => {
                 </a>
               </Link>
             ))}
-            <Link href="/contact">
-              <Button className="mahogany-button text-white cozy-shadow">
+            <Button asChild className="bg-brown-600 hover:bg-brown-700 text-white shadow-md">
+              <Link href="/contact">
                 Contact
-              </Button>
-            </Link>
+              </Link>
+            </Button>
           </div>
 
           {/* Mobile menu button */}
@@ -82,14 +82,15 @@ const Navigation = () => {
                     </a>
                   </Link>
                 ))}
-                <Link href="/contact">
-                  <Button 
-                    className="w-full bg-mahogany-600 text-white hover:bg-mahogany-700"
-                    onClick={() => setIsOpen(false)}
-                  >
+                <Button 
+                  asChild
+                  className="w-full bg-brown-600 text-white hover:bg-brown-700"
+                  onClick={() => setIsOpen(false)}
+                >
+                  <Link href="/contact">
                     Contact
-                  </Button>
-                </Link>
+                  </Link>
+                </Button>
               </div>
             </SheetContent>
           </Sheet>

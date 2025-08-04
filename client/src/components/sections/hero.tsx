@@ -24,7 +24,7 @@ const Hero = () => {
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4">
               <Link href="/games">
-                <Button size="lg" className="mahogany-button text-white transform hover:scale-105 transition-all duration-200 cozy-shadow warm-glow">
+                <Button size="lg" className="bg-forest-600 hover:bg-forest-700 text-white transform hover:scale-105 transition-all duration-200 shadow-lg">
                   <span className="mr-2">🎮</span>
                   Explore Our Games
                 </Button>
@@ -33,7 +33,7 @@ const Hero = () => {
                 <Button 
                   variant="outline" 
                   size="lg"
-                  className="border-2 border-forest-600 text-forest-600 hover:bg-forest-600 hover:text-white transition-all duration-200 nature-card"
+                  className="border-2 border-brown-600 text-brown-600 hover:bg-brown-600 hover:text-white transition-all duration-200 bg-white"
                 >
                   <span className="mr-2">🌿</span>
                   Learn About Us
@@ -43,7 +43,7 @@ const Hero = () => {
 
             {/* Social Links */}
             <div className="flex items-center space-x-6 pt-4">
-              <span className="text-forest-600 font-medium">🌲 Follow the journey:</span>
+              <span className="text-gray-700 font-medium">🌲 Follow the journey:</span>
               <div className="flex space-x-4">
                 <a 
                   href="https://github.com/taibytes" 
