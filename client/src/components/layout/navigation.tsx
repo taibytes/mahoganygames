@@ -2,7 +2,8 @@ import { useState } from "react";
 import { Link, useLocation } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
-import { Menu, Coffee } from "lucide-react";
+import { Menu } from "lucide-react";
+import mahoganyLogo from "@assets/mahogany-logo_1754327701398.png";
 
 const Navigation = () => {
   const [location] = useLocation();
@@ -26,8 +27,8 @@ const Navigation = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-3 hover:opacity-80 transition-opacity">
-            <div className="w-10 h-10 bg-brown-600 rounded-lg flex items-center justify-center shadow-md">
-              <Coffee className="text-white" size={20} />
+            <div className="w-12 h-12 bg-white rounded-lg flex items-center justify-center shadow-md p-1">
+              <img src={mahoganyLogo} alt="Mahogany Games Logo" className="w-full h-full object-contain" />
             </div>
             <div className="flex flex-col">
               <span className="font-playfair font-bold text-xl text-brown-accessible">
@@ -63,7 +64,7 @@ const Navigation = () => {
           <Sheet open={isOpen} onOpenChange={setIsOpen}>
             <SheetTrigger asChild>
               <Button variant="ghost" size="icon" className="md:hidden">
-                <Menu className="text-mahogany-700" />
+                <Menu className="text-brown-600" />
               </Button>
             </SheetTrigger>
             <SheetContent side="right" className="w-[300px] sm:w-[400px]">
