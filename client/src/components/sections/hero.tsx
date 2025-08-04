@@ -24,7 +24,7 @@ const Hero = () => {
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4">
               <Link href="/games">
-                <Button size="lg" className="bg-mahogany-600 text-white hover:bg-mahogany-700 transform hover:scale-105 transition-all duration-200 cozy-shadow">
+                <Button size="lg" className="mahogany-button text-white transform hover:scale-105 transition-all duration-200 cozy-shadow warm-glow">
                   <span className="mr-2">🎮</span>
                   Explore Our Games
                 </Button>
@@ -33,7 +33,7 @@ const Hero = () => {
                 <Button 
                   variant="outline" 
                   size="lg"
-                  className="border-2 border-mahogany-600 text-mahogany-600 hover:bg-mahogany-600 hover:text-white transition-all duration-200"
+                  className="border-2 border-mahogany-600 text-mahogany-600 hover:bg-mahogany-600 hover:text-white transition-all duration-200 mahogany-card"
                 >
                   Learn About Us
                 </Button>
@@ -71,8 +71,8 @@ const Hero = () => {
 
           {/* Hero Image */}
           <div className="relative lg:justify-self-end">
-            <div className="relative bg-white rounded-2xl cozy-shadow p-8 max-w-md mx-auto transform rotate-3 hover:rotate-0 transition-transform duration-300">
-              <div className="absolute -top-4 -left-4 w-8 h-8 bg-mahogany-600 rounded-full shadow-lg"></div>
+            <div className="relative mahogany-card rounded-2xl cozy-shadow p-8 max-w-md mx-auto transform rotate-3 hover:rotate-0 transition-transform duration-300 warm-glow">
+              <div className="absolute -top-4 -left-4 w-8 h-8 mahogany-gradient-deep rounded-full shadow-lg"></div>
               <div className="absolute -bottom-4 -right-4 w-6 h-6 bg-accent rounded-full shadow-lg"></div>
               
               <div className="space-y-4">

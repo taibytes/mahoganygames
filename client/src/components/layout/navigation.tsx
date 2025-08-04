@@ -21,12 +21,12 @@ const Navigation = () => {
   };
 
   return (
-    <nav className="bg-white/95 backdrop-blur-sm shadow-lg sticky top-0 z-50 border-b border-mahogany-200">
+    <nav className="mahogany-card backdrop-blur-sm shadow-lg sticky top-0 z-50 border-b border-mahogany-300 warm-glow">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-3 hover:opacity-80 transition-opacity">
-            <div className="w-10 h-10 bg-gradient-to-br from-mahogany-500 to-mahogany-700 rounded-lg flex items-center justify-center shadow-md">
+            <div className="w-10 h-10 mahogany-gradient-deep rounded-lg flex items-center justify-center shadow-md warm-glow">
               <Coffee className="text-white" size={20} />
             </div>
             <div className="flex flex-col">
@@ -53,7 +53,7 @@ const Navigation = () => {
               </Link>
             ))}
             <Link href="/contact">
-              <Button className="bg-mahogany-600 text-white hover:bg-mahogany-700">
+              <Button className="mahogany-button text-white cozy-shadow">
                 Contact
               </Button>
             </Link>

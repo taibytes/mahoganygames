@@ -32,7 +32,7 @@ const BlogCard = ({ post }: BlogCardProps) => {
   };
 
   return (
-    <article className="bg-mahogany-50 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
+    <article className="mahogany-card rounded-2xl overflow-hidden cozy-shadow hover:warm-glow transition-all duration-300 transform hover:scale-105">
       <div className="p-6 space-y-4">
         <div className="flex items-center justify-between text-sm">
           <Badge className={getCategoryColor(post.category)}>
@@ -54,7 +54,7 @@ const BlogCard = ({ post }: BlogCardProps) => {
         
         <div className="flex items-center justify-between pt-4">
           <div className="flex items-center space-x-3">
-            <div className="w-8 h-8 bg-mahogany-600 rounded-full flex items-center justify-center">
+            <div className="w-8 h-8 mahogany-gradient-deep rounded-full flex items-center justify-center warm-glow">
               <span className="text-white text-sm font-semibold">T</span>
             </div>
             <div className="space-y-0">
