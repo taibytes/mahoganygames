@@ -104,7 +104,13 @@ const Portfolio = () => {
                     : 'bg-gradient-to-br from-gray-500 to-gray-600'
                 }`}>
                   <div className="text-center">
-                    <IconComponent size={48} className="mx-auto mb-2 text-white drop-shadow-lg" />
+                    <IconComponent size={48} className={`mx-auto mb-2 drop-shadow-lg ${
+                      game.status === 'active' 
+                        ? 'text-green-200' 
+                        : game.status === 'coming_soon'
+                        ? 'text-amber-200'
+                        : 'text-white'
+                    }`} />
                     <p className="font-semibold text-white drop-shadow-md">{getStatusText(game.status)}</p>
                   </div>
                   <Badge className={`absolute top-3 right-3 ${getStatusColor(game.status)}`}>

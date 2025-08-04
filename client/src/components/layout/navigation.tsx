@@ -26,7 +26,7 @@ const Navigation = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-3 hover:opacity-80 transition-opacity">
-            <div className="w-10 h-10 mahogany-gradient-deep rounded-lg flex items-center justify-center shadow-md warm-glow">
+            <div className="w-10 h-10 bg-brown-600 rounded-lg flex items-center justify-center shadow-md">
               <Coffee className="text-white" size={20} />
             </div>
             <div className="flex flex-col">
