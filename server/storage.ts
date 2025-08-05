@@ -74,37 +74,37 @@ export class MemStorage implements IStorage {
     this.games.set(sipAndServe.slug, sipAndServe);
 
     // Add future games
-    const gardenTales: Game = {
+    const voidColony: Game = {
       id: randomUUID(),
-      title: "Garden Tales",
-      slug: "garden-tales",
-      description: "Nurture a magical garden while uncovering stories of growth and friendship.",
-      shortDescription: "Nurture a magical garden while uncovering stories of growth and friendship.",
-      category: "Adventure",
+      title: "Void Colony",
+      slug: "void-colony",
+      description: "After a mysterious cataclysm fractured the known galaxy, only fragments of ancient alien civilizations remain. As the last Overseer of the Void Colonization Initiative, your mission is clear: rebuild your alien species from the stardust, reclaim lost knowledge, and create a thriving interstellar empire from nothing. Start with a single pod on a barren asteroid. Harvest exotic resources, awaken specialized alien workers, and build strange, beautiful structures that automate your growth. Unlock powerful technologies, discover abandoned relics, and expand to new planets—each with their own challenges, mysteries, and alien biomes. In Void Colony, the universe is quiet, strange, and full of opportunity. Whether you're a casual tapper or a methodical strategist, this idle experience lets you build at your own pace—and shape the future of your kind.",
+      shortDescription: "Rebuild. Evolve. Expand. A relaxing, addictive idle strategy game set in the remnants of a forgotten galaxy.",
+      category: "Strategy",
       status: "coming_soon",
-      progress: 15,
+      progress: 25,
       engine: "Godot Engine",
       featured: false,
       releaseDate: null,
-      features: ["Magical Garden", "Story-driven", "Character Relationships"]
+      features: ["🪐 Idle Strategy", "Alien Civilizations", "Resource Automation", "Galactic Expansion"]
     };
-    this.games.set(gardenTales.slug, gardenTales);
+    this.games.set(voidColony.slug, voidColony);
 
-    const storyWeaver: Game = {
+    const hollowed: Game = {
       id: randomUUID(),
-      title: "Story Weaver",
-      slug: "story-weaver",
-      description: "Create and share interactive stories in a collaborative narrative experience.",
-      shortDescription: "Create and share interactive stories in a collaborative narrative experience.",
-      category: "Creative",
+      title: "Hollowed",
+      slug: "hollowed",
+      description: "Once a sanctuary for Black families during segregation, Lakefall Retreat was a place of laughter, healing, and community—until a fire in 1978 left it charred and abandoned. Now, over 40 years later, a group of descendants returns to the forgotten grounds for a weekend of restoration and remembrance. But something has been waiting. Watching. Hollowed by grief, betrayal, and blood. As the line between memory and madness begins to blur, old secrets claw their way to the surface. Rituals once meant to protect now beckon something darker. You control the choices of seven characters, each haunted by more than just their past—and every decision you make will shape who survives, who suffers, and who becomes part of the Hollowed.",
+      shortDescription: "A psychological horror game exploring generational trauma through the lens of seven descendants returning to an abandoned retreat.",
+      category: "Horror",
       status: "concept",
-      progress: 5,
+      progress: 10,
       engine: "Godot Engine",
       featured: false,
       releaseDate: null,
-      features: ["Interactive Stories", "Collaborative Creation", "Community Sharing"]
+      features: ["Psychological Horror", "Multiple Characters", "Choice-driven Narrative", "Historical Context"]
     };
-    this.games.set(storyWeaver.slug, storyWeaver);
+    this.games.set(hollowed.slug, hollowed);
   }
 
   async getUser(id: string): Promise<User | undefined> {
